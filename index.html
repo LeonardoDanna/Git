@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Ideias</title>
+    <style>
+        /* Estilos para as notas */
+        .sticky-note {
+            background-color: #ffcc00;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <h1>Registro de Ideias</h1>
+    <div class="sticky-note">
+        <h2>Minha primeira ideia</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac justo vel odio tincidunt aliquet.</p>
+    </div>
+    <div class="sticky-note">
+        <h2>Outra ideia interessante</h2>
+        <p>Nullam nec justo euismod, aliquam libero a, tincidunt nunc. Fusce eget justo et libero lacinia tincidunt.</p>
+    </div>
+
+    <script>
+        // Exemplo de funcionalidade para adicionar novas notas
+        const addButton = document.createElement('button');
+        addButton.textContent = 'Adicionar Nova Ideia';
+        addButton.addEventListener('click', () => {
+            const newNote = document.createElement('div');
+            newNote.classList.add('sticky-note');
+            newNote.innerHTML = `
+                <h2>Nova Ideia</h2>
+                <p>Escreva sua ideia aqui...</p>
+            `;
+            document.body.appendChild(newNote);
+        });
+        document.body.appendChild(addButton);
+    </script>
+</body>
+</html>
