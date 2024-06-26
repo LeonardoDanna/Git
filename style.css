@@ -1,0 +1,79 @@
+/* Estilos para as notas */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.sticky-note {
+    position: relative;
+    padding: 20px 10px 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.sticky-note.yellow {
+    background-color: #ffcc00;
+}
+.sticky-note.yellow:hover {
+    background-color: #ffdd55;
+}
+.sticky-note.purple {
+    background-color: #9370DB;
+}
+.sticky-note.purple:hover {
+    background-color: #b18cd9;
+}
+.sticky-note.blue {
+    background-color: #87CEFA;
+}
+.sticky-note.blue:hover {
+    background-color: #add8e6;
+}
+.color-dots {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    display: flex;
+    gap: 5px;
+}
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #ffffff; /* Borda branca fina */
+    cursor: pointer;
+}
+.dot.yellow {
+    background-color: #ffcc00;
+}
+.dot.purple {
+    background-color: #9370DB;
+}
+.dot.blue {
+    background-color: #87CEFA;
+}
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+button:hover {
+    background-color: #0056b3;
+}
